@@ -1,0 +1,27 @@
+{
+  "name": "credit_card-1lvl",
+  "source": "src/index.html",
+  "url": "http://localhost:1234/",
+  "scripts": {
+    "start": "parcel ./src/index.html --no-cache",
+    "build": "parcel build ./src/index.html --no-cache",
+    "test:unit": "jest",
+    "test": "npm i && jest"
+  },
+  "author": "Alina Borisova",
+  "dependencies": {
+    "redom": "^3.29.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
+    "babel-jest": "^29.6.4",
+    "jest": "^29.6.4",
+    "jest-environment-jsdom": "^29.6.4",
+    "parcel": "^2.8.3"
+  },
+  "description": "npm install --save-dev jest npm install -g jest npm i -D babel-jest @babel/core @babel/preset-env",
+  "version": "1.0.0",
+  "main": "babel.config.js",
+  "license": "ISC"
+}
