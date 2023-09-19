@@ -10,8 +10,9 @@ describe('Validation Card Holder', () => {
 
     it('To string', () => {
         expect(checkCardHolder('Alan Griht')).toBe('Alan Griht');
+        expect(checkCardHolder('Tp Grypt')).toBe('Name is not correct');
         expect(checkCardHolder(677)).toBe('Name is not correct');
-        expect(checkCardHolder('Peter Parker')).toMatch(/^([A-Za-z]{3,})\s([A-Za-z]{3,})$/g)
+        expect(checkCardHolder('Peter Parker')).toMatch(/^([A-Za-z]{3,})\s([A-Za-z]{3,})$/g);
     });
 
     it('one word', () => {
@@ -77,7 +78,7 @@ describe('Validation CVV count', () => {
         expect(checkCardCvvCount('1234')).toBe('CVV is not correct');
         expect(checkCardCvvCount('123')).toEqual('123');
         expect(checkCardCvvCount(123)).toBe('123');
-        expect(checkCardCvvCount('123')).toMatch(/^[0-9]{3}$/g)
+        expect(checkCardCvvCount('123')).toMatch(/^[0-9]{3}$/g);
     });
 });
 

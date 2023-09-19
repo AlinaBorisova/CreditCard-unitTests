@@ -10,8 +10,8 @@ export const checkCardHolder = (holderInputUser) => {
     return result;
 };
 
-export const checkCardNumber = (holderInputNumber) => {
-    const test = holderInputNumber.toString();
+export const checkCardNumber = (cardNumber) => {
+    const test = cardNumber.toString();
     const validate = /\d/g;
     const result = test.replace(/\D+/g, '');
 
